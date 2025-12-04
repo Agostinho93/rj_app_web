@@ -260,20 +260,40 @@ class _RJAppState extends State<RJApp> {
   @override
   Widget build(BuildContext context) {
     final pages = [
-      CarouselSlider(
-        options: CarouselOptions(height: 300, autoPlay: true),
-        items: fotos.map((url) => Image.network(url, fit: BoxFit.cover)).toList(),
+      LayoutBuilder(
+        builder: (context, constraints) {
+          return CarouselSlider(
+            options: CarouselOptions(
+              height: constraints.maxHeight,
+              viewportFraction: 1.0,
+              autoPlay: true,
+            ),
+            items: fotos.map((url) => Container(
+              width: constraints.maxWidth,
+              height: constraints.maxHeight,
+              child: Image.network(url, fit: BoxFit.cover, width: double.infinity, height: double.infinity),
+            )).toList(),
+          );
+        },
       ),
-      GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-        itemCount: fotos.length,
-        itemBuilder: (context, i) => GestureDetector(
-          onTap: () => _abrirFoto(fotos[i]),
-          child: Image.network(fotos[i], fit: BoxFit.cover),
-        ),
+      LayoutBuilder(
+        builder: (context, constraints) {
+          return GridView.builder(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+            itemCount: fotos.length,
+            itemBuilder: (context, i) => GestureDetector(
+              onTap: () => _abrirFoto(fotos[i]),
+              child: Container(
+                width: constraints.maxWidth / 3,
+                height: constraints.maxWidth / 3,
+                child: Image.network(fotos[i], fit: BoxFit.cover, width: double.infinity, height: double.infinity),
+              ),
+            ),
+          );
+        },
       ),
       albuns.isEmpty
-          ? const Center(child: Text("Ainda não existem álbuns. Cria um com o botão +"))
+          ? const Center(child: Text("Ainda n e3o existem  e1lbuns. Cria um com o bot e3o +"))
           : ListView(
               children: albuns.entries.map((entry) {
                 return ExpansionTile(
