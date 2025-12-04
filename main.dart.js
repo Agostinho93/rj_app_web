@@ -82295,7 +82295,7 @@ A.a0A.prototype={
 $1(a){var s=this.a,r=s.d,q=A.j(r).i("b_<1>")
 q=A.xP(new A.b_(r,q),new A.a0z(s,a),q.i("v.E"),t.En)
 s=A.a0(q,A.j(q).i("v.E"))
-return new A.t_(B.Ra,s,null)},
+return new A.t_(B.R9,s,null)},
 $S:525}
 A.a0z.prototype={
 $1(a){var s=null
@@ -85364,8 +85364,8 @@ B.lL=new A.vG(1,"manual")
 B.Bf=new A.vG(2,"controller")
 B.Bg=new A.vH(null,null,null,null,null,null)
 B.U7=new A.XB(0,"scale")
-B.R9=new A.hp("Ainda n\x00e3o existem \x00e1lbuns. Cria um com o bot\x00e3o +",null,null,null,null,null,null,null,null)
-B.Bh=new A.lb(B.L,null,null,B.R9,null)
+B.Ra=new A.hp("Ainda n\xe3o existem \xe1lbuns. Crie um com o bot\xe3o +",null,null,null,null,null,null,null,null)
+B.Bh=new A.lb(B.L,null,null,B.Ra,null)
 B.Bi=new A.vJ(null,null,null,null,null,null,null,null,null)
 B.d_=new A.qc(0,"none")
 B.d0=new A.qc(1,"isTrue")
@@ -87616,7 +87616,7 @@ B.R6=new A.hp("Criar",null,null,null,null,null,null,null,null)
 B.Q4=new A.u(!0,null,null,null,null,null,18,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.R7=new A.hp("Criar novo \xe1lbum",null,B.Q4,null,null,null,null,null,null)
 B.R8=new A.hp("Adicionar a \xe1lbum",null,null,null,null,null,null,null,null)
-B.Ra=new A.hp("Escolher \xe1lbum",null,null,null,null,null,null,null,null)
+B.R9=new A.hp("Escolher \xe1lbum",null,null,null,null,null,null,null,null)
 B.Rb=new A.hp("R&J",null,null,null,null,null,null,null,null)
 B.Rc=new A.hp("Fotografia",null,null,null,null,null,null,null,null)
 B.Uj=new A.acU(0,"system")

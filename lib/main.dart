@@ -293,7 +293,7 @@ class _RJAppState extends State<RJApp> {
         },
       ),
       albuns.isEmpty
-          ? const Center(child: Text("Ainda n e3o existem  e1lbuns. Cria um com o bot e3o +"))
+         ? const Center(child: Text("Ainda não existem álbuns. Crie um com o botão +"))
           : ListView(
               children: albuns.entries.map((entry) {
                 return ExpansionTile(
