@@ -5,9 +5,10 @@
   "packages": [
     {
       "name": "rj_app",
-      "version": "0.0.0",
+      "version": "1.0.0+1",
       "dependencies": [
         "carousel_slider",
+        "cupertino_icons",
         "flutter"
       ],
       "devDependencies": [
@@ -34,10 +35,15 @@
     },
     {
       "name": "carousel_slider",
-      "version": "5.1.1",
+      "version": "4.2.1",
       "dependencies": [
         "flutter"
       ]
+    },
+    {
+      "name": "cupertino_icons",
+      "version": "1.0.8",
+      "dependencies": []
     },
     {
       "name": "flutter",

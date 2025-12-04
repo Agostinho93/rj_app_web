@@ -15,7 +15,7 @@
     },
     {
       "name": "carousel_slider",
-      "rootUri": "file:///C:/Users/joao.p.agostinho/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-5.1.1",
+      "rootUri": "file:///C:/Users/joao.p.agostinho/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-4.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -36,6 +36,12 @@
       "rootUri": "file:///C:/Users/joao.p.agostinho/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "cupertino_icons",
+      "rootUri": "file:///C:/Users/joao.p.agostinho/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
     },
     {
       "name": "fake_async",

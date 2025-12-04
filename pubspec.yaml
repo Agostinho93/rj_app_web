@@ -1,0 +1,30 @@
+name: rj_app
+description: Aplicação Flutter Web R&J
+publish_to: 'none' # remove se quiseres publicar no pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ícones padrão do Flutter
+  cupertino_icons: ^1.0.8
+
+  # Pacote para o carrossel
+  carousel_slider: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # Assets que queres incluir no build
+  assets:
+    - icons/Icon-192.jpg
+    - icons/Icon-512.jpg
