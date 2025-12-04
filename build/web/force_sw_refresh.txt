@@ -1,0 +1,1 @@
+Forçar refresh do service worker - 2025-12-04
