@@ -1,0 +1,2 @@
+# Forçar atualização do GitHub Pages
+Este ficheiro serve apenas para garantir que o commit é único e força o Pages a atualizar todos os ficheiros do build.
