@@ -1,0 +1,11 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+*.iml
+*.log
+*.tmp
+*.swp
