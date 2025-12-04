@@ -2,10 +2,39 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>R&J</title>
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="RJ App - versão web">
+
+    <!-- Ícones e manifest -->
+    <link rel="icon" type="image/jpg" href="assets/icons/Icon-192.jpg">
+    <link rel="apple-touch-icon" href="assets/icons/Icon-512.jpg">
     <link rel="manifest" href="manifest.json">
+
+    <!-- Cores do PWA -->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>RJ App</title>
+
+    <!-- Flutter bootstrap -->
+    <script src="flutter.js" defer></script>
   </head>
   <body>
-    <script src="main.dart.js"></script>
+    <script>
+      // Inicialização do Flutter Web
+      window.addEventListener('load', function(ev) {
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: null,
+          },
+          onEntrypointLoaded: function(engineInitializer) {
+            engineInitializer.initializeEngine().then(function(appRunner) {
+              appRunner.runApp();
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
